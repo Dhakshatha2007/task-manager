@@ -45,9 +45,7 @@ task-manager/
     └── package.json
 ```
 
-## 1. Set up the database (free, ~2 minutes)
-
-You need a PostgreSQL connection string. The easiest free option:
+## 1. Set up the database
 
 1. Go to [neon.tech](https://neon.tech) and sign up (free tier, no credit card).
 2. Create a new project. Copy the **connection string** it gives you (starts with `postgresql://`).
@@ -116,10 +114,3 @@ That's it — you'll have a live URL you can put on a resume or share with your 
 
 Authenticated requests need `Authorization: Bearer <token>`.
 
-## Ideas to extend it (good for an internship demo)
-
-- Task comments or activity log
-- Assign tasks to other users / shared team boards
-- Email reminders for approaching due dates
-- Drag-and-drop between status columns (Kanban view)
-- Unit/integration tests (Jest + Supertest for the API)
