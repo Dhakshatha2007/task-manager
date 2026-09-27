@@ -45,7 +45,9 @@ task-manager/
     └── package.json
 ```
 
-## 1. Set up the database
+## 1. Set up the database (free, ~2 minutes)
+
+You need a PostgreSQL connection string. The easiest free option:
 
 1. Go to [neon.tech](https://neon.tech) and sign up (free tier, no credit card).
 2. Create a new project. Copy the **connection string** it gives you (starts with `postgresql://`).
@@ -98,7 +100,7 @@ Open `http://localhost:5173`, register an account, and start adding tasks. Open 
 3. Add environment variables: `VITE_API_URL` = `https://your-backend.onrender.com/api`, `VITE_SOCKET_URL` = `https://your-backend.onrender.com`.
 4. Deploy. Once it's live, go back to Render and update `CLIENT_ORIGIN` to this Vercel URL, then redeploy the backend.
 
-That's it — you'll have a live URL you can put on a resume or share with your internship team.
+That's it — your app is now live and accessible from a public URL.
 
 ## API reference (quick)
 
@@ -114,3 +116,10 @@ That's it — you'll have a live URL you can put on a resume or share with your 
 
 Authenticated requests need `Authorization: Bearer <token>`.
 
+## Future Improvements
+
+- Task comments or activity log
+- Assign tasks to other users / shared team boards
+- Email reminders for approaching due dates
+- Drag-and-drop between status columns (Kanban view)
+- Unit/integration tests (Jest + Supertest for the API)
